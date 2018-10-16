@@ -15,6 +15,11 @@ function setup() {
   yval = new Array(floor(w/xspacing));
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
+
 function draw() {
   background(255);
   calcoWave();
